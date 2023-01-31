@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,19 +8,19 @@
 
 body{
     background-color: rgb(248, 248, 248);
+
 }
 
 .nav{
     display: flex;
     justify-content: space-evenly;
-}
-
-ul{
     list-style: none;
     margin-top: 20px;
 }
 
+
 .inicio{
+    font-family: 'Roboto', sans-serif;
     margin-top: 4%;
     width: 400px;
     height: 200px;
@@ -29,7 +32,63 @@ ul{
     justify-content: space-evenly;
     list-style: none;
 }
+/* NOSOTROS */
 
+.v2{
+    display: flex;
+    margin: 7%;
+    margin-left: 10%;
+    
+}
+
+.v3{
+    font-family: 'Roboto', sans-serif;
+    width: 287px;
+    height: 184px;
+}
+
+.imgv2{
+    padding: 10px;
+    width:  600px;
+    height: 540px;
+}
+
+/* NOSOTROS/ */
+
+/* SERVICIOS */
+
+.tarjetascontainer2{
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* SERVICIOS/ */
+
+/* MARCAS */
+
+.tarjetascontainer3{
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.tarjeta2{
+    margin: 20px;
+    width: 300px;
+    height: 220px;
+    border: 1px solid black;
+    
+}
+
+/* MARCAS/ */
+
+/* HOME */
 .imgv1{
     padding: 10px;
     width:  600px;
@@ -72,8 +131,71 @@ ul{
 
 text-align: center;}
 
+/* HOME */
+
 .hr{
     width: 40%;
     margin-left: 30%;
 
+}
+
+/* FOOTER */
+.footer{
+    margin-top: 15%;
+    background-color: pink;
+    width: 1500px;
+    height: 150px;
+
+}
+
+.footertext{
+    padding: 35px;
+    width: 400px;
+    text-align: center;
+    margin-left: 34%;
+}
+
+.redeslogo{
+    display: flex;
+    justify-content: center;
+
+}
+
+.datos{
+    display: flex;
+    text-align: center;
+    margin-top: 5%;
+}
+
+
+.contenido{
+    margin-top: 10%;
+    margin-right: 30%;
+}
+
+.datosC{
+    margin: 50px;
+}
+
+.contactoh3{
+    height: 20px;
+    width: 120px;
+}
+
+.Nosotros{
+    margin-top: 50px;
+    padding: 20px;
+    width: 350px;
+    height: 300px;
+}
+
+.nosotros1{
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
