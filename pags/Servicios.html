@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,137 +12,120 @@
     <title>Servicios</title>
 </head>
 <body>
-    <nav>
-        
-        <ul class="nav">
-            <h2 class="navh2">LOGO</h2>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="/pags/Servicios.html">Servicios</a></li>
-            <li><a href="/pags/Marcas.html">Marcas</a></li>
-            <li><a href="/pags/Nosotros.html">Nosotros</a></li>
-            <li><a href="/pags/Contacto.html">Contacto</a></li>
-            <button>WhatsApp</button>
-        </ul>
-    
-    </nav>
-
-    <section">
-        <div class="section2">
-            <h2>Nuestros Servicios</h2>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">LOGO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Servicios</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Mas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Marcas.html">Marcas</a></li>
+                  <li><a class="dropdown-item" href="Contacto.html">Contacto</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Nosotros.html">Nosotros</a></li>
+                </ul>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-success">WhatsApp</button>
+          </div>
         </div>
+      </nav>
 
-        <div class="tarjetascontainer2">
-            <div class="tarjeta1">
-                <div>
-                 <img class="xd" src="https://guiadelacalefaccion.com.ar/files/news/detalle/mantenimiento-de-calderasguiacalef.png" alt="imagenservicio">
-                </div>
-                 
-                <h3>SERVICIO 1</h3>
-                <p>Descripcion Servicio</p>
-             </div>
-     
-             <div class="tarjeta1">
-                 <div>
-                  <img class="xd" src="https://guiadelacalefaccion.com.ar/files/news/detalle/mantenimiento-de-calderasguiacalef.png" alt="imagenservicio">
-                 </div>
-                  
-                 <h3>SERVICIO 2</h3>
-                 <p>Descripcion Servicio</p>
-                 <button>Contactanos</button>
+    <section>
+      <div class="card mb-3" style="max-width: 1200px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://climalvinas.com.ar/wp-content/uploads/2021/05/suelo-radiante-o-radiadores.jpg" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title">Losa & Piso Radiante</h4>
+                <p class="card-text">
+                  Los sistemas de calefacción por losa radiante o suelo radiante resultan invisibles dado que su instalación procede dentro de la estructura del edificio. El sistema de losa radiante o suelo radiante brinda calor uniforme a los ambientes, cualquiera sea la clase de edificio, dirigiendo el calor al interior del espacio y reduciendo el de las paredes y techos. Los sistemas actuales de losa radiante o suelo radiante permite brindar calefacción a los diferentes espacios de manera individual o simplemente admite la instalación de un termostato en cada ambiente para su autorregulación. El alto rendimiento de las misma prevee un ahorro importante de dinero y fundamentalmente de energía.</p>
               </div>
-     
-              <div class="tarjeta1">
-                 <div>
-                  <img class="xd" src="https://guiadelacalefaccion.com.ar/files/news/detalle/mantenimiento-de-calderasguiacalef.png" alt="imagenservicio">
-                 </div>
-                  
-                 <h3>SERVICIO 3</h3>
-                 <p>Descripcion Servicio</p>
-                 <button>Contactanos</button>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section>
+      <div class="card mb-3" style="max-width: 1200px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://climalvinas.com.ar/wp-content/uploads/2021/05/CALDERA.jpg" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title">Calderas</h4>
+                <p class="card-text">
+                  Las calderas son sistemas de calefacción por agua caliente, los cuales pueden ser por radiadores o piso radiante.</p>
+                  <p>Nuestros técnicos capacitados atenderán cualquier desperfecto que tenga su caldera o circuito.</p>
+                  <p>Los servicios de mantenimiento preventivo son fundamentales para extender la vida útil de su caldera. Consulte por servicio de mantenimiento.</p>
               </div>
-
-              <div class="tarjeta1">
-                <div>
-                 <img class="xd" src="https://guiadelacalefaccion.com.ar/files/news/detalle/mantenimiento-de-calderasguiacalef.png" alt="imagenservicio">
-                </div>
-                 
-                <h3>SERVICIO 4</h3>
-                <p>Descripcion Servicio</p>
-                <button>Contactanos</button>
-             </div>
-
-             <div class="tarjeta1">
-                <div>
-                 <img class="xd" src="https://guiadelacalefaccion.com.ar/files/news/detalle/mantenimiento-de-calderasguiacalef.png" alt="imagenservicio">
-                </div>
-                 
-                <h3>SERVICIO 5</h3>
-                <p>Descripcion Servicio</p>
-                <button>Contactanos</button>
-             </div>
-
-             <div class="tarjeta1">
-                <div>
-                 <img class="xd" src="https://guiadelacalefaccion.com.ar/files/news/detalle/mantenimiento-de-calderasguiacalef.png" alt="imagenservicio">
-                </div>
-                 
-                <h3>SERVICIO 6</h3>
-                <p>Descripcion Servicio</p>
-                <button>Contactanos</button>
-             </div>
-
-             <div class="tarjeta1">
-                <div>
-                 <img class="xd" src="https://guiadelacalefaccion.com.ar/files/news/detalle/mantenimiento-de-calderasguiacalef.png" alt="imagenservicio">
-                </div>
-                 
-                <h3>SERVICIO 7</h3>
-                <p>Descripcion Servicio</p>
-                <button>Contactanos</button>
-             </div>
-
-             <div class="tarjeta1">
-                <div>
-                 <img class="xd" src="https://guiadelacalefaccion.com.ar/files/news/detalle/mantenimiento-de-calderasguiacalef.png" alt="imagenservicio">
-                </div>
-                 
-                <h3>SERVICIO 8</h3>
-                <p>Descripcion Servicio</p>
-                <button>Contactanos</button>
-             </div>
-
-             <div class="tarjeta1">
-                <div>
-                 <img class="xd" src="https://guiadelacalefaccion.com.ar/files/news/detalle/mantenimiento-de-calderasguiacalef.png" alt="imagenservicio">
-                </div>
-                 
-                <h3>SERVICIO 9</h3>
-                <p>Descripcion Servicio</p>
-                <button>Contactanos</button>
-             </div>
-
-
-  
+            </div>
+          </div>
+        </div>
+    </section>
+    <section>
+      <div class="card mb-3" style="max-width: 1200px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://climalvinas.com.ar/wp-content/uploads/2022/08/RADIADORES-5-1536x1024.jpg" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title">Radiadores</h4>
+                <p class="card-text">
+                  Estos sistemas de calefacción funcionan transportando agua caliente a través de distribuciones de cañerías que culminan en un dispositivo conocido como radiador que es quien transmite el calor a los distintos ambientes. Permiten obtener calor de manera veloz y brindan un servicio silencioso y seguro dado que se regulan por termostatos. Sin embargo, no es menos cierto que son mecanismos complejos cuyo uso debe ser realizado por personas especialistas en ellos ya que, de no hacerlo, podrían generar importantes conflictos al momento de su puesta en acción como filtraciones, goteos de radiadores, daños a las estructuras, etc.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section>
+      <div class="card mb-3" style="max-width: 1200px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="https://climalvinas.com.ar/wp-content/uploads/2021/05/piso-radiante-2-e1622476516179.jpg" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title">Limpieza Piso Radiante</h4>
+                <p class="card-text">
+                  El mejor sistema de calefacción que puede tener una casa es el que no se puede ver. Es por eso que los sistemas de calefacción por suelo radiante son atractivos y cada vez más populares. Sin embargo, su invisibilidad también puede ser una desventaja. Porque, ¿cómo puede saber cuándo algo no funciona en mi sistema de calefacción? La única forma eficiente de hacerlo es usando una cámara termográfica.</p>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
 
 
-    <footer>
-        <section class="footer">
-            <div class="footertext">
-                <p>Desde 1998  nos dedicamos a brindar soluciones, atendiendo con la misma celeridad y eficiencia desde un servicio técnico domiciliario hasta la instalación y puesta en marcha de equipos de climatización a gas y calderas domiciliarias.</p>
+
+
+    <footer class="footer">
+      <section>
+          <div class="footertext">
+              <p>Desde 1998  nos dedicamos a brindar soluciones, atendiendo con la misma celeridad y eficiencia desde un servicio técnico domiciliario hasta la instalación y puesta en marcha de equipos de climatización a gas y calderas domiciliarias.</p>
+          </div>
+          <div class="redeslogo">
+              <img src="/img/instagram.png" alt="instagram">
+              <img src="/img/facebook.png" alt="facebook">
+              <img src="/img/gorjeo.png" alt="twitter">
             </div>
-            <div class="vermas">
-                <button>Contactanos</button>
-              </div>
-              <div class="redeslogo">
-                <img src="/img/instagram.png" alt="instagram">
-                <img src="/img/facebook.png" alt="facebook">
-                <img src="/img/gorjeo.png" alt="twitter">
-              </div>
+      </section>
+  </footer>
 
-        </section>
-    </footer>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
