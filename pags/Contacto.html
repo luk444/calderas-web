@@ -12,25 +12,95 @@
     <title>Contacto</title>
 </head>
 <body>
-    <nav>
+    <header class="hero">
+
+        <nav class="nav container" id="nav">
+            <h2 class="nav__logo">Calderas Clima.</h2>
+
+            <ul class="nav__links">
+
+                <li class="nav__item">
+                    <a href="../index.html" class="nav__link">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/pags/Servicios.html" class="nav__link">Servicios</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/pags/Marcas.html" class="nav__link">Marcas</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/pags/Nosotros.html" class="nav__link">Nosotros</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Contacto</a>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-success">WhatsApp</button>
+                </li>
+
+            </ul>
+
+            <a href="#nav" class="nav__hamburguer">
+                <img src="img/menu.svg" class="nav__icon">
+            </a>
+
+            <a href="#" class="nav__close">
+                <img src="img/close.svg" class="nav__icon">
+            </a>
+
+        </nav>
         
-        <ul class="nav">
-            <h2 class="navh2">LOGO</h2>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="/pags/Servicios.html">Servicios</a></li>
-            <li><a href="/pags/Marcas.html">Marcas</a></li>
-            <li><a href="/pags/Nosotros.html">Nosotros</a></li>
-            <li><a href="/pags/Contacto.html">Contacto</a></li>
-            <button type="button" class="btn btn-success">WhatsApp</button>
-        </ul>
-    
-    </nav>
+    </header>
+
+    <section class="main">
+
+        <figure class="main__figure">
+            <img src="../img/illustration.svg" class="main__img">
+        </figure>
+
+        <div class="main__contact">
+
+            <h2 class="main__title">Tienes alguna duda?</h2>
+            <p class="main__paragraph">No dudes en consultarnos!</p>
+
+            <form class="main__form">
+
+                <input type="text" placeholder="Ingresa tu mail" class="main__input">
+
+                <input type="text" placeholder="Nombre" class="main__input">
+                
+                <textarea class="descripcion__input" placeholder="Mensaje" name="Mensaje"></textarea>
+
+                <input type="submit" value="Enviar" class="main__input main__input--send">
+
+            </form>
+
+            <p class="main__paragraph">O Continua por Nuestras Redes</p>
+
+            <article class="main__social">
+
+                <a href="#" class="main__link">
+                    <img src="../img/google-icon.svg" class="main__icon">
+                </a>
+
+                <a href="#" class="main__link">
+                    <img src="../img/apple.svg" class="main__icon">
+                </a>
+
+                <a href="#" class="main__link">
+                    <img src="../img/facebook.svg" class="main__icon">
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
 
     <section>
         <div class="contact">
             <h3>CONTACTO</h3>
         </div>
-
     </section>
     <section class="datos">
 
@@ -40,7 +110,7 @@
                 <p>CalderasClima@mail.com</p>
                 <p>1123213938</p>
             </div>
-            <button>WhatsApp</button>
+            <button type="button" class="btn btn-info">WhatsApp</button>
         </section>
 
         <section class="contenido">
@@ -49,10 +119,9 @@
                 <p>Lunes a Viernes: 09:00 a 18:30hs</p>
                 <p>Sabados y Domingos: Cerrado</p>
             </div>
-            <button>WhatsApp</button>
+            <button type="button" class="btn btn-info">WhatsApp</button>
         </section>
-
-        
+      
     </section>
     <section class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.39707786374!2d-58.57338526498463!3d-34.61546111537449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1676332445095!5m2!1ses-419!2sar" width="1200" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
