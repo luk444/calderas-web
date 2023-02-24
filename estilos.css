@@ -45,6 +45,7 @@ body{
     justify-content: space-between;
     align-items: center;
     grid-template-columns: repeat(2, max-content);
+    z-index: 2;
 }
 
 .nav:target{
@@ -55,7 +56,7 @@ body{
 
 .nav__logo{
     font-size: 2.5rem;
-    z-index: 1;
+    z-index: 4;
 }
 
 .nav__hamburguer, 
@@ -68,10 +69,12 @@ body{
 
 .nav__hamburguer{
     transform: var(--state-hamburguer);
+    z-index: 3;
 }
 
 .nav__close{
     transform: var(--state-close);
+    z-index: 3;
 }
 
 .nav__icon{
@@ -94,9 +97,14 @@ body{
 
     transform: var(--state-menu);
     transition: .3s transform;
+    z-index: 3;
 }
 
 .nav__item{
+    list-style: none;
+}
+
+li{
     list-style: none;
 }
 
@@ -156,6 +164,16 @@ body{
 }
 .bannerhome{
     margin: 47px;
+}
+.margincard{
+    margin: 10px;
+}
+.card{
+    margin: 15px;
+    z-index: -9;
+}
+.mb-3{
+    margin-bottom: 3rem;
 }
 /* NOSOTROS */
 
@@ -292,6 +310,7 @@ text-align: center;}
     text-align: center;
     margin-top: 5%;
     justify-content: space-evenly;
+    background-image: none !important;
 }
 
 
@@ -341,6 +360,7 @@ img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    z-index: -9;
 }
 
 body{
@@ -355,7 +375,7 @@ main{
 main h1{
     text-transform: uppercase;
     text-align: center;
-    font-size: 60px;
+    font-size: 35px;
     color: #0dcaf0;
     background-color: #b3b3b3;
     text-shadow: 2px 2px 3px rgba(47 94 86 / 80%);
@@ -374,6 +394,7 @@ main h1{
 }
 
 .box{
+    z-index: 0;
     width: 218px;
     height: 200px;
     background: #fff;
