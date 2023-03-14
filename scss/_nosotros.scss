@@ -1,0 +1,51 @@
+.v2{
+    display: flex;
+    margin: 7%;
+    margin-left: 10%;
+    
+}
+
+.v3{
+    width: 287px;
+    height: 184px;
+}
+
+.imgv2{
+    padding: 10px;
+    width:  600px;
+    height: 540px;
+}
+
+.Nosotros{
+    margin-top: 50px;
+    padding: 20px;
+    width: 350px;
+    height: 300px;
+}
+
+.nosotros1{
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.servicios{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: -9;
+}
+
+body{
+    background: #f3f3f3;
+}
