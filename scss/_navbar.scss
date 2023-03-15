@@ -16,7 +16,6 @@
     --state-close: scale(0);
     --state-hamburguer:scale(1);
     --state-menu: translate(-100%);
-
     padding: 40px 0;
     display: grid;
     justify-content: space-between;
@@ -66,12 +65,11 @@
     left: 0;
     right: 0;
     padding: 0;
-
     display: grid;
     align-content: center;
+    align-items: center;
     gap: 4em;
     padding-left: 5%;
-
     transform: var(--state-menu);
     transition: .3s transform;
     z-index: 3;
@@ -92,7 +90,7 @@ li{
     letter-spacing: 2px;
 }
 
-@media (min-width:768px) {
+@media (min-width:996px) {
     .nav{
         --state-hamburguer:scale(0);
         --state-menu: translate(0);

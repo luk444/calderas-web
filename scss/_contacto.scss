@@ -1,16 +1,16 @@
-.datos{
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-    text-align: center;
-    margin-top: 5%;
-    justify-content: space-evenly;
-    background-image: none !important;
+@media (min-width: 768px) {
+    .datos{
+        display: flex;
+        text-align: center;
+        margin-top: 5%;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
 }
-
 
 .contenido{
     margin-top: 5%;
-
+    text-align: center;
 }
 
 .datosC{
