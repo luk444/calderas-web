@@ -3,6 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    @if $vista == desktop{
+        @media only screen and (min-width:1024px){
+            h1{font-size: $h1Desktop;}
+        }
+    } @else if $vista == mobile {
+        @media only screen and (max-width: 996px){
+            h1{font-size:$h1Mobile;
+            font-family: 'Roboto', 'sans-serif', monospace;
+            }
+        }
+    } @else {
+        h1{font-size:1rem;}
+    }
+}
+
 body::-webkit-scrollbar{
     width: 5px;
 }
