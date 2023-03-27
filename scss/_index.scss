@@ -26,7 +26,7 @@
 }
 .mb-3{
     margin-bottom: 3rem;
-    margin: 4% 8% 2% 8%;
+    margin: 4% 20% 2% 20%;
 }
 
 .imgv1{
@@ -77,3 +77,30 @@
     margin-left: 30%;
 
 }
+
+/* MARCAS CALDERAS LOOP */
+
+.marcas-de-calderas {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .marcas-de-calderas img {
+    height: 90px;
+    margin-right: 20px;
+    animation: mover-marcas 20s linear infinite;
+  }
+  
+  .marcas-de-calderas img:last-child {
+    margin-right: 0;
+  }
+  
+  @keyframes mover-marcas {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+  

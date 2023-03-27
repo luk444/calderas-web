@@ -14,3 +14,48 @@
     border: 1px solid black;
     
 }
+.informacion{
+    text-align: center;
+    margin: 15% 10% 15% 10%;
+
+}
+.boxInfo{
+
+    background-color: #0099e9cf;
+    border-radius: 1.5rem;
+    margin: 15%;
+
+}
+.sectionInfo{
+    margin: 5%;
+    padding: 5%;
+    color: white;
+    
+}
+
+/* MARCAS CALDERAS LOOP */
+
+.marcas-de-calderas {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .marcas-de-calderas img {
+    height: 160px;
+    margin-right: 20px;
+    animation: mover-marcas 20s linear infinite;
+  }
+  
+  .marcas-de-calderas img:last-child {
+    margin-right: 0;
+  }
+  
+  @keyframes mover-marcas {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+  
