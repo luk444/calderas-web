@@ -505,6 +505,7 @@ main h1 {
 .nav__links {
   background-color: #0099e9;
   position: absolute;
+  height: 100%;
   top: 0;
   bottom: 0;
   left: 0;
@@ -518,7 +519,6 @@ main h1 {
   transform: var(--state-menu);
   transition: 0.3s transform;
   z-index: 3;
-  margin-top: 15%;
   font-weight: bold;
 }
 
