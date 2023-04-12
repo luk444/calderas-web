@@ -262,9 +262,15 @@ main h1 {
 .footer {
   margin-top: 15%;
   background-color: #0099E9;
-  align-items: center;
+  padding: 10px;
+}
+
+.containerfooter {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10px;
+  align-items: center;
 }
 
 .footertext {
@@ -287,7 +293,13 @@ main h1 {
 .redeslogo {
   display: flex;
   justify-content: space-evenly;
-  margin: 6px;
+  align-items: center;
+  margin: 15px;
+  padding: 10px;
+}
+
+.redlog {
+  margin: 10px;
 }
 
 .inicio {
