@@ -12,6 +12,9 @@
     margin-top: 4%;
     text-align: center;
 }
+.colorb{
+    background-color: #0dcaf0 !important; 
+}
 
 .datosC{
     margin: 50px;
@@ -124,6 +127,7 @@ main h1{
 
 .main{
     margin: auto;
+    margin-top: 30px;
     width: 90%;
     max-width: 1000px;
     background-image: linear-gradient(to left, rgba(255, 255, 255, 0.472), rgba(255, 255, 255, 0.365));
