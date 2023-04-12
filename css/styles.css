@@ -339,7 +339,8 @@ main h1 {
 }
 
 .btnlarge {
-  width: 400px;
+  width: 360px;
+  margin: 10px;
 }
 
 .cardmarg {
@@ -360,7 +361,7 @@ main h1 {
 
 .imgv1 {
   padding: 10px;
-  min-width: 250px;
+  min-width: 400px;
 }
 
 .btn1 {
