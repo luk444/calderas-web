@@ -773,4 +773,8 @@ body {
   max-width: 100%;
 }
 
+.imgs {
+  max-height: 300px;
+}
+
 /*# sourceMappingURL=styles.css.map */
