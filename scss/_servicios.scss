@@ -8,6 +8,12 @@
 .ContainerServicios{
     max-width: 100%;
 }
+.Containerservicio{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 5%;
+}
 
 .imgs{
     height: 300px;
@@ -27,3 +33,5 @@
       max-width: 100%;
     }
   }
+
+  
