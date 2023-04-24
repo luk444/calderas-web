@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/luk444/calderas-web/issues"
   },
-  "homepage": "https://github.com/luk444/calderas-web#readme"
+  "homepage": "https://github.com/luk444/calderas-web#readme",
+  "dependencies": {
+    "sass": "^1.62.0"
+  }
 }

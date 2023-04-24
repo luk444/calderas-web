@@ -17,13 +17,24 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #0099E9;
+  background-color: #00b8bc;
   border-radius: 10px;
 }
 
 body {
   background-color: rgb(248, 248, 248);
   font-family: "Roboto", sans-serif;
+}
+
+.btnCol {
+  background-color: #00b8bc;
+  border-color: #00b8bc;
+  color: white;
+  width: 250px;
+}
+
+.margintop {
+  margin-top: 150px;
 }
 
 @media (min-width: 768px) {
@@ -41,7 +52,7 @@ body {
 }
 
 .colorb {
-  background-color: #0dcaf0 !important;
+  background-color: #00b8bc !important;
 }
 
 .datosC {
@@ -69,7 +80,7 @@ main h1 {
   text-transform: uppercase;
   text-align: center;
   font-size: 35px;
-  color: #0dcaf0;
+  color: #00b8bc;
   background-color: #b3b3b3;
   text-shadow: 2px 2px 3px rgba(47, 94, 86, 0.8);
   -webkit-background-clip: text;
@@ -105,13 +116,13 @@ main h1 {
 .box:hover {
   transform: scale(1.1);
   box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.5);
-  background: #0099E9;
+  background: #00b8bc;
   z-index: 1;
 }
 
 .box i {
   font-size: 60px;
-  color: #0099E9;
+  color: #00b8bc;
 }
 
 .box:hover i {
@@ -266,8 +277,8 @@ main h1 {
 }
 
 .footer {
-  margin-top: 15%;
-  background-color: #0099E9;
+  margin-top: 10%;
+  background-color: #00b8bc;
   padding: 10px;
 }
 
@@ -281,7 +292,7 @@ main h1 {
 
 .footertext {
   padding: 25px;
-  background-color: #0099E9;
+  background-color: #00b8bc;
 }
 
 .footextt {
@@ -351,7 +362,7 @@ main h1 {
 .card {
   margin: 15px;
   z-index: -9;
-  background-color: #0099E9;
+  background-color: #00b8bc;
   color: #f3f3f3;
 }
 
@@ -363,6 +374,7 @@ main h1 {
 .imgv1 {
   padding: 10px;
   min-width: 400px;
+  margin-top: 15px;
 }
 
 .btn1 {
@@ -374,7 +386,7 @@ main h1 {
   margin: 8%;
   align-items: center;
   justify-content: center;
-  color: #0099e9;
+  color: #00b8bc;
   text-align: center;
 }
 
@@ -510,11 +522,6 @@ main h1 {
   margin: auto;
 }
 
-.logopng {
-  height: 42px;
-  color: aliceblue;
-}
-
 .tarjetascontainer3 {
   align-items: center;
   display: flex;
@@ -536,7 +543,7 @@ main h1 {
 }
 
 .boxInfo {
-  background-color: rgba(0, 153, 233, 0.8117647059);
+  background-color: #00b8bc;
   border-radius: 1.5rem;
   margin: 1%;
 }
@@ -581,7 +588,7 @@ main h1 {
 .hero {
   background-size: cover;
   min-height: 34px;
-  background-color: #0099e9;
+  background-color: #00b8bc;
   color: #ffffff;
 }
 
@@ -609,6 +616,13 @@ main h1 {
   user-select: none;
 }
 
+.logopng {
+  height: 42px;
+  color: aliceblue;
+  z-index: 6;
+  position: absolute;
+}
+
 .nav__hamburguer,
 .nav__close {
   cursor: pointer;
@@ -632,7 +646,7 @@ main h1 {
 }
 
 .nav__links {
-  background-color: #0099e9;
+  background-color: #00b8bc;
   position: absolute;
   height: 100%;
   top: 0;

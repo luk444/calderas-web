@@ -8,7 +8,7 @@
 .hero{
     background-size: cover;
     min-height: 34px;
-    background-color: #0099e9;
+    background-color: #00b8bc;
     color: #ffffff;
 }
 
@@ -36,6 +36,13 @@
     user-select: none;
 }
 
+.logopng{
+    height: 42px;
+    color: aliceblue;
+    z-index: 6;
+    position: absolute;
+}
+
 .nav__hamburguer, 
 .nav__close{
     cursor: pointer;
@@ -59,7 +66,7 @@
 }
 
 .nav__links{
-    background-color: #0099e9;
+    background-color: #00b8bc;
     position: absolute;
     height: 100%;
     top: 0;
