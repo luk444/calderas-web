@@ -40,7 +40,8 @@ body {
   .datos {
     display: flex;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 2%;
+    margin-bottom: 3%;
     justify-content: space-evenly;
     flex-direction: row;
   }
@@ -148,6 +149,8 @@ main h1 {
   bottom: 50px;
   filter: blur(5px);
   opacity: 1;
+  padding: 5px;
+  width: 320px;
 }
 
 .box:hover h4 {
@@ -732,7 +735,6 @@ li {
 .v3 {
   width: 320px;
   height: 184px;
-  text-align: center;
 }
 
 .imgv2 {
