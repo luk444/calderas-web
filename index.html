@@ -18,6 +18,44 @@
     <title>Home | Calderas Nova</title>
     <meta name="description" content="Calderas Baxi Nova | Reparacion y Instalacion de calderas, Servicios de limpieza y pusta en marcha. Tambien nos dedicamos a la instalacion y mantenimiento de pisos radiantes.">
     <meta name="keywords" content="Calderas, Reparacion de calderas, Piso radiante, losa radiante, Aire acondicionado">
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js"></script>
+    <script>
+        // Configura tu proyecto de Firebase
+        var firebaseConfig = {
+            apiKey: "AIzaSyBl6c7wqnzu11xYF47zv9wAk3k-47muwJk",
+            authDomain: "baxinovaip.firebaseapp.com",
+            projectId: "baxinovaip",
+            storageBucket: "baxinovaip.appspot.com",
+            messagingSenderId: "152872734605",
+            appId: "1:152872734605:web:bbf0767fe253627b2e37c4"
+        };
+
+        // Inicializa Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // Accede a la base de datos Firestore
+        var db = firebase.firestore();
+
+        // Captura la dirección IP del visitante
+        var ip = "";
+
+        fetch("https://api64.ipify.org?format=json")
+            .then(response => response.json())
+            .then(data => {
+                ip = data.ip;
+                // Almacena la dirección IP en Firestore
+                db.collection("registros_ip").add({
+                    ip: ip
+                })
+                .then(function(docRef) {
+                    console.log("Dirección IP almacenada correctamente.");
+                })
+                .catch(function(error) {
+                    console.error("Error al almacenar la dirección IP:", error);
+                });
+            });
+    </script>
 </head>
 <body>
     <section class="ftco-section">
