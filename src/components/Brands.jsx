@@ -1,7 +1,27 @@
-import { BRANDS, COMPANY } from '../data/constants';
+import { COMPANY } from '../data/constants';
+
+import aristonLogo from '../assets/aristonlogo.webp';
+import baxiLogo from '../assets/baxilogo.webp';
+import caldaiaLogo from '../assets/caldaialogo.webp';
+import eutermaLogo from '../assets/eutermalogo.webp';
+import ferroliLogo from '../assets/ferroli.png';
+import oceanLogo from '../assets/Ocean.jpg';
+import peisaLogo from '../assets/peisalogo.webp';
+import rocaLogo from '../assets/Roca-Logo.jpg';
+
+const BRAND_LOGOS = [
+  { name: 'Ariston', logo: aristonLogo },
+  { name: 'Baxi', logo: baxiLogo },
+  { name: 'Caldaia', logo: caldaiaLogo },
+  { name: 'Euterma', logo: eutermaLogo },
+  { name: 'Ferroli', logo: ferroliLogo },
+  { name: 'Ocean', logo: oceanLogo },
+  { name: 'Peisa', logo: peisaLogo },
+  { name: 'Roca', logo: rocaLogo },
+];
 
 export default function Brands() {
-  const duplicatedBrands = [...BRANDS, ...BRANDS];
+  const duplicatedBrands = [...BRAND_LOGOS, ...BRAND_LOGOS];
 
   return (
     <section className="py-20 bg-white overflow-hidden">
@@ -26,16 +46,18 @@ export default function Brands() {
           <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
           
           {/* Scrolling container */}
-          <div className="flex animate-scroll">
+          <div className="flex animate-scroll items-center">
             {duplicatedBrands.map((brand, index) => (
               <div 
                 key={index}
                 className="flex-shrink-0 mx-4"
               >
-                <div className="bg-gray-50 hover:bg-primary-50 rounded-xl px-8 py-6 min-w-[160px] text-center transition-all duration-300 group cursor-default border border-transparent hover:border-primary-200">
-                  <span className="text-gray-600 group-hover:text-primary-700 font-semibold text-lg transition-colors">
-                    {brand}
-                  </span>
+                <div className="bg-gray-50 hover:bg-primary-50 rounded-xl px-6 py-4 min-w-[160px] h-24 flex items-center justify-center transition-all duration-300 group cursor-default border border-transparent hover:border-primary-200">
+                  <img 
+                    src={brand.logo} 
+                    alt={`Logo ${brand.name}`}
+                    className="max-h-14 max-w-[120px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                  />
                 </div>
               </div>
             ))}

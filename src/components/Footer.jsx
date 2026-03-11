@@ -1,4 +1,5 @@
 import { COMPANY, NAV_LINKS } from '../data/constants';
+import logo from '../assets/LogoCalderasClima.png';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,16 +11,12 @@ export default function Footer() {
         <div className="py-12 grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-primary-600 rounded-xl flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                </svg>
-              </div>
-              <div>
-                <span className="text-xl font-bold">{COMPANY.name}</span>
-                <span className="block text-xs text-gray-400">{COMPANY.tagline}</span>
-              </div>
+            <div className="mb-4">
+              <img 
+                src={logo} 
+                alt={COMPANY.name}
+                className="h-14 w-auto"
+              />
             </div>
             <p className="text-gray-400 text-sm max-w-md mb-4">
               Empresa de servicios técnicos de calefacción y climatización en Buenos Aires. Brindamos soluciones profesionales para hogares y comercios.

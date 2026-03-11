@@ -1,18 +1,37 @@
+import { useState, useEffect } from 'react';
 import { COMPANY } from '../data/constants';
-import bannerImg from '../assets/banner.jpg';
+import banner1 from '../assets/banner.jpg';
+import banner2 from '../assets/banner2.jpg';
+import heroImg from '../assets/puestaenmarchacalderaimagen.jpg';
+
+const banners = [banner1, banner2];
 
 export default function Hero() {
+  const [currentBanner, setCurrentBanner] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentBanner((prev) => (prev + 1) % banners.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   const whatsappUrl = `https://wa.me/${COMPANY.whatsapp}?text=${encodeURIComponent('Hola, necesito consultar por un servicio técnico de calefacción.')}`;
 
   return (
     <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${bannerImg})` }}
-      />
+      {/* Background Images with crossfade */}
+      {banners.map((banner, index) => (
+        <div 
+          key={index}
+          className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
+            index === currentBanner ? 'opacity-100' : 'opacity-0'
+          }`}
+          style={{ backgroundImage: `url(${banner})` }}
+        />
+      ))}
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-primary-900/75" />
+      <div className="absolute inset-0 bg-primary-900/70" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -85,7 +104,7 @@ export default function Hero() {
               {/* Image container */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80"
+                  src={heroImg}
                   alt="Técnico de calefacción profesional"
                   className="w-full h-[500px] object-cover"
                 />

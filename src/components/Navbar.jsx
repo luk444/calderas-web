@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { COMPANY, NAV_LINKS } from '../data/constants';
+import logo from '../assets/LogoCalderasClima.png';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -22,26 +23,12 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#inicio" className="flex items-center gap-2 group">
-            <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-colors ${
-              isScrolled ? 'bg-primary-600' : 'bg-white/20 backdrop-blur-sm'
-            }`}>
-              <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-              </svg>
-            </div>
-            <div>
-              <span className={`text-xl font-bold transition-colors ${
-                isScrolled ? 'text-gray-900' : 'text-white'
-              }`}>
-                {COMPANY.name}
-              </span>
-              <span className={`hidden sm:block text-xs transition-colors ${
-                isScrolled ? 'text-gray-500' : 'text-white/70'
-              }`}>
-                {COMPANY.tagline}
-              </span>
-            </div>
+          <a href="#inicio" className="flex items-center group">
+            <img 
+              src={logo} 
+              alt={COMPANY.name}
+              className="h-12 md:h-14 w-auto"
+            />
           </a>
 
           {/* Desktop Navigation */}

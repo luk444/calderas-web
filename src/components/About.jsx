@@ -1,4 +1,5 @@
 import { COMPANY } from '../data/constants';
+import aboutImg from '../assets/aboutimage.jpg';
 
 export default function About() {
   const benefits = [
@@ -48,7 +49,7 @@ export default function About() {
           <div className="relative order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80"
+                src={aboutImg}
                 alt="Técnico de CalderasClima realizando servicio"
                 className="w-full h-[400px] object-cover"
               />
