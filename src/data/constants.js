@@ -1,10 +1,10 @@
 export const COMPANY = {
-  name: 'Baxinova',
+  name: 'CalderasClima',
   tagline: 'Servicio Técnico Independiente',
   description: 'Empresa independiente de servicios técnicos de calefacción y climatización',
   phone: '+54 9 11 2846-2184',
   phoneDisplay: '+54 9 11 2846-2184',
-  email: 'contacto@baxinova.com',
+  email: 'contacto@CalderasClima.com',
   whatsapp: '5491128462184',
   address: 'Buenos Aires, Argentina',
   hours: {

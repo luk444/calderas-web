@@ -49,7 +49,7 @@ export default function About() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
                 src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80"
-                alt="Técnico de Baxinova realizando servicio"
+                alt="Técnico de CalderasClima realizando servicio"
                 className="w-full h-[400px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary-900/60 to-transparent" />
