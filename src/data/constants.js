@@ -2,10 +2,10 @@ export const COMPANY = {
   name: 'CalderasClima',
   tagline: 'Servicio Técnico Independiente',
   description: 'Empresa independiente de servicios técnicos de calefacción y climatización',
-  phone: '+54 9 11 2846-2184',
-  phoneDisplay: '+54 9 11 2846-2184',
+  phone: '+54 9 11 3841-9549',
+  phoneDisplay: '+54 9 11 3841-9549',
   email: 'contacto@CalderasClima.com',
-  whatsapp: '5491128462184',
+  whatsapp: '5491138419549',
   address: 'Buenos Aires, Argentina',
   hours: {
     weekdays: 'Lunes a Viernes: 8:00 - 18:00',
