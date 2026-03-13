@@ -6,7 +6,7 @@ export const COMPANY = {
   phoneDisplay: '+54 9 11 3841-9549',
   email: 'contacto@CalderasClima.com',
   whatsapp: '5491138419549',
-  address: 'Buenos Aires, Argentina',
+  address: 'Gral. Martín Güemes 508, Hurlingham, Buenos Aires',
   hours: {
     weekdays: 'Lunes a Viernes: 8:00 - 18:00',
     saturday: 'Sábados: 9:00 - 14:00'
